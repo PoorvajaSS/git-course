@@ -1,0 +1,56 @@
+git status
+
+mkdir gitnew (should probably be the repository name, not literally "gitnew")
+
+echo "# git-course" >> README.md
+
+git init
+
+git add README.md
+
+git commit -m "m" (This should be a meaningful commit message instead of just "m")
+
+git branch -m main
+
+git remote add origin path (This should be the actual repository URL) (Only once)
+
+ssh-keygen -o (This command is incomplete and likely incorrect. See below for a better alternative)
+
+ls (This is probably intended to check the contents of the .ssh directory. There is also an instruction to make a directory named "ssh" but it has been crossed out, with the corrected command in the following line)
+
+mkdir .ssh (Should be 'mkdir .ssh')
+
+cd .ssh (Optional)
+
+ssh-keygen -t rsa -b 4096
+
+~/.ssh/id_rsa.pub
+
+Follow 15.
+
+git remote add origin path (This should be the actual repository URL)
+
+git push -u origin main
+
+Important Notes and Corrections:
+
+ssh-keygen Commands: The original ssh-keygen -o command is incorrect. The image then has ssh-keygen -t rsa -b 4096. This is the correct way to generate an SSH key: Run this command and follow the prompts. It will create a public key (id_rsa.pub) and a private key (id_rsa) in the .ssh directory.
+
+Step 15: Follow 15: Steps 15 onwards describe how to connect to BSH, however, this has already been provided previously.
+
+How to connect to BSH
+
+Settings -> Navigate SSH Keys
+
+Create SSH key
+
+In Terminal
+=> ssh-keygen -t rsa -b 4096 (enter)
+~/.ssh/id_rsa.pub -> click on link, copy to SSH link
+
+Paste on the SSH Key -> Add Key
+-> Write access
+
+new powershell
+
+git add, commit, etc.
